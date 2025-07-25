@@ -187,10 +187,6 @@ switch (diaSemana) {
 
 O resultado vai imprimir: Terça
 
-
-Link do exercício desafio:
-https://dontpad.com/exercicios-js-condicionais
-
 ---
 
 Atividade 04
@@ -223,3 +219,7 @@ switch (operacao) {
 }
 ```
 
+---
+
+Link do exercício desafio:
+https://dontpad.com/exercicios-js-condicionais
