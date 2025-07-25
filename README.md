@@ -189,6 +189,24 @@ O resultado vai imprimir: Terça
 
 ---
 
+Atividade 03
+Crie um código que solicite ao usuário um número, verifique
+se é positivo, negativo ou zero, e exiba uma mensagem no console.
+
+```javascript
+let num1 = parseFloat(prompt("Digite um número: " ));
+
+if (num1 > 0) {
+    console.log(`${num1} é positivo`);
+} else if (num1 <0) {
+    console.log(`${num1} é negativo`);
+} else {
+    console.log(`${num1} é zero`);
+}
+```
+
+---
+
 Atividade 04
 Crie um código JavaScript que solicite ao usuário dois números
 e uma operação matemática, utilize switch para realizar a operação e exibir o resultado.
@@ -199,26 +217,32 @@ Utilize switch para realizar a operação escolhida e exiba o resultado com cons
 
 ```javascript
 let operacao = (prompt("Qual operação quer fazer? (soma, divisão, multiplicação ou subtração)"))
-
 let numero1 = parseFloat(prompt("Digite o primeiro número: "))
 let numero2 = parseFloat(prompt("Digite o segundo número: "))
 
 switch (operacao) {
     case "soma":
-        console.log(numero1 + numero2)
+        console.log(`A soma é: ${numero1 + numero2}`)
         break
     case "divisão":
-        console.log(numero1 / numero2)
+        if (numero2 == 0) {
+            console.log("Não é possível dividir por 0")
+        } else {
+            console.log(`A divisão é: ${numero1 / numero2}`)  
+        }
         break
     case "multiplicação":
-        console.log(numero1 * numero2)
+        console.log(`A multiplicação é: ${numero1 * numero2}`)
         break
     case "subtração":
-        console.log(numero1 - numero2)
+        console.log(`A divisão é: ${numero1 - numero2}`)
     break
+    default:
+        console.log("Não é um operador válido. Digite: soma, divisão, multiplicação ou subtração")
 }
 ```
 
+Obs.: Interpolação é exibir o resultado com uma string + a operação que quero fazer dentro das chaves.
 ---
 
 Link do exercício desafio:
