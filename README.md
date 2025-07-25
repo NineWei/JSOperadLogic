@@ -1,6 +1,7 @@
 # JSOperadLogic
 
 ## Operadores Lógicos no **Java Script**
+
 - && (and)
 - || (or)
 - ! (no)
@@ -82,3 +83,110 @@ Menor ou igual? true
 
 ---
 
+## Condicionais
+
+- if (Se):
+- else if (Senão se):
+- else (Senão):
+- switch (Troca):
+
+### Exemplo com IF (Se)
+
+ ```javascript
+let idade = 18
+let trabalha = "sim"
+
+if (idade >= 18 && trabalha == "sim") {
+    console.log("Você é maior de idade")
+}
+```
+
+O resultado vai imprimir: Você é maior de idade
+
+### Exemplo com ELSE IF (Senão se)
+
+```javascript
+let idade = 15
+let trabalha = "sim"
+
+if (idade >= 18) {
+    console.log("Você é maior de idade")
+} else if (idade >= 12) {
+    console.log("Você é um adolescente")
+}
+```
+
+O resultado vai imprimir: Você é um adolescente
+
+Obs.: Pode colocar quantos else if precisar
+
+### Exemplo com ELSE (Senão)
+
+É a última condição, é o "resto", porque **não depende de condição nenhuma**. Se nada for verdadeiro, "cai" no Else.
+
+```javascript
+let idade = 2
+let trabalha = "sim"
+
+if (idade >= 18) {
+    console.log("Você é maior de idade")
+} else if (idade >= 12) {
+    console.log("Você é um adolescente")
+} else if (idade>=4) {
+    console.log("Você é uma criança")
+} else {
+    console.log("Você é um bebê")
+}
+```
+
+O resultado vai imprimir: Você é um bebê
+
+## Estrutura Ternário
+
+É quando escreve a estrutura condicional em uma linha só. E é só para verificar se o resultado é true or false.
+
+```javascript
+let idade = 16
+let trabalha = "sim"
+
+let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade"
+console.log(resultado)
+```
+
+O resultado vai imprimir: Menor de idade
+
+? == então
+: == senão
+
+## Estrutura Switch
+
+Ele é mais usado quando já tem o o valor da variável e não precisa de estruturas complexas das condições.
+Default não é obrigatório.
+Break é utilizado para parar a estrutura.
+O case pode ser tanto numérico, quanto uma string.
+Switch Pode ser usado como um menu, por exemplo.
+
+```javascript
+let diaSemana = 3
+
+switch (diaSemana) {
+    case 1:
+        console.log("Domingo")
+        break
+    case 2:
+        console.log("Segunda")
+        break
+    case 3:
+        console.log("Terça")
+        break
+    default:
+        console.log("Não é um dia válido")
+        break
+}
+```
+
+O resultado vai imprimir: Terça
+
+
+Link do exercício desafio:
+https://dontpad.com/exercicios-js-condicionais
