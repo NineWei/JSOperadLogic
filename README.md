@@ -190,3 +190,36 @@ O resultado vai imprimir: Terça
 
 Link do exercício desafio:
 https://dontpad.com/exercicios-js-condicionais
+
+---
+
+Atividade 04
+Crie um código JavaScript que solicite ao usuário dois números
+e uma operação matemática, utilize switch para realizar a operação e exibir o resultado.
+
+Solicite os números com prompt e armazene em numero1 e numero2.
+Solicite a operação e armazene em operacao.
+Utilize switch para realizar a operação escolhida e exiba o resultado com console.log.
+
+```javascript
+let operacao = (prompt("Qual operação quer fazer? (soma, divisão, multiplicação ou subtração)"))
+
+let numero1 = parseFloat(prompt("Digite o primeiro número: "))
+let numero2 = parseFloat(prompt("Digite o segundo número: "))
+
+switch (operacao) {
+    case "soma":
+        console.log(numero1 + numero2)
+        break
+    case "divisão":
+        console.log(numero1 / numero2)
+        break
+    case "multiplicação":
+        console.log(numero1 * numero2)
+        break
+    case "subtração":
+        console.log(numero1 - numero2)
+    break
+}
+```
+
