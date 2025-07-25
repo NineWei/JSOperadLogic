@@ -17,14 +17,12 @@ let vota = "sim"
 console.log(idade >=18 || trabalha == "sim" || vota == "sim")
 ```
 
-Saída: 
-[Running] node "c:\Users\Aluno Programação\Downloads\AulaJS\script.js"
+Saída:  
 true
 
-[Done] exited with code=0 in 0.125 seconds
-
-Obs.: É necessário usar a expressão dentro dos parênteses.
+Obs.: É necessário usar a expressão dentro dos parênteses.  
 Obs.: Para ligar o arquivo do html com o do js, é utilizado dentro do body do HTML: 
+
 ```html
 <script src="script.js"></script>
 ```
@@ -49,13 +47,13 @@ console.log("Pelo menos um é positivo?", numero1>0 || numero2>0)
 console.log("Nenhum é positivo?", numero1<0 && numero2<0)
 ```
 
-Lembrete.: Olhar o resultado no console do navegador (F12 -> Console)
-numero1 = 5
-numero2 = -5
-O resultado vai imprimir: 
-Ambos positivos? false
-Pelo menos um é positivo? true
-Nenhum é positivo? false
+Lembrete.: Olhar o resultado no console do navegador (F12 -> Console)  
+numero1 = 5  
+numero2 = -5  
+O resultado vai imprimir:  
+Ambos positivos? false  
+Pelo menos um é positivo? true  
+Nenhum é positivo? false  
 
 ---
 
@@ -73,13 +71,13 @@ console.log("Maior ou igual?", numero1 >= numero2)
 console.log("Menor ou igual?", numero1 <= numero2)
 ```
 
-numero1 = 5
-numero2 = 5
-O resultado vai imprimir:
-Igual? true
-Diferente? false
-Maior ou igual? true
-Menor ou igual? true
+numero1 = 5  
+numero2 = 5  
+O resultado vai imprimir:  
+Igual? true  
+Diferente? false  
+Maior ou igual? true  
+Menor ou igual? true  
 
 ---
 
@@ -116,9 +114,9 @@ if (idade >= 18) {
 }
 ```
 
-O resultado vai imprimir: Você é um adolescente
+O resultado vai imprimir: Você é um adolescente  
 
-Obs.: Pode colocar quantos else if precisar
+Obs.: Pode colocar quantos else if precisar.
 
 ### Exemplo com ELSE (Senão)
 
@@ -141,6 +139,8 @@ if (idade >= 18) {
 
 O resultado vai imprimir: Você é um bebê
 
+---
+
 ## Estrutura Ternário
 
 É quando escreve a estrutura condicional em uma linha só. E é só para verificar se o resultado é true or false.
@@ -155,16 +155,18 @@ console.log(resultado)
 
 O resultado vai imprimir: Menor de idade
 
-? == então
+? == então  
 : == senão
+
+---
 
 ## Estrutura Switch
 
-Ele é mais usado quando já tem o o valor da variável e não precisa de estruturas complexas das condições.
-Default não é obrigatório.
-Break é utilizado para parar a estrutura.
-O case pode ser tanto numérico, quanto uma string.
-Switch Pode ser usado como um menu, por exemplo.
+Ele é mais usado quando já tem o o valor da variável e não precisa de estruturas complexas das condições.  
+Default não é obrigatório.  
+Break é utilizado para parar a estrutura.  
+O case pode ser tanto numérico, quanto uma string.  
+Switch Pode ser usado como um menu, por exemplo.  
 
 ```javascript
 let diaSemana = 3
@@ -242,7 +244,12 @@ switch (operacao) {
 }
 ```
 
-Obs.: Interpolação é exibir o resultado com uma string + a operação que quero fazer dentro das chaves.
+Obs.: Interpolação é exibir o resultado com uma string + a operação que quero fazer dentro das chaves, utilizando crase:  
+
+```javascript
+console.log(`A multiplicação é: ${numero1 * numero2}`)
+```
+
 ---
 
 Link do exercício desafio:
